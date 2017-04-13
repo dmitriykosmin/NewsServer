@@ -8,9 +8,9 @@ namespace NewsDBLibrary
 {
     public interface NewsDBInterface
     {
-        List<NewsItem> GetNews(DateTime Date);
+        IEnumerable<NewsItem> GetNews(DateTime Date);
         void AddNews(NewsItem newItem);
-        void AddNews(List<NewsItem> newNews);
+        void AddNews(IEnumerable<NewsItem> newNews);
 
         void DeleteAllNews();
         bool IsEmpty();

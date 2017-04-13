@@ -26,13 +26,13 @@ namespace NewsDBLibrary
             context.RetryPolicy = RetryPolicies.Retry(3, TimeSpan.FromSeconds(1));
         }
 
-        public List<NewsItem> GetNews(DateTime Date)
+        public IEnumerable<NewsItem> GetNews(DateTime Date)
         {
             List<NewsItem> results = context.News.Where(g => g.PartitionKey == Date.ToString("MMddyyyy")).ToList();
             return results;
         }
 
-        public void AddNews(List<NewsItem> newNews)
+        public void AddNews(IEnumerable<NewsItem> newNews)
         {
             foreach (NewsItem newItem in newNews)
             {

@@ -21,10 +21,10 @@ namespace NewsResponder.Controllers
 
         public class Result
         {
-            public NewsItem[] articles { get; set; }
-            public Result(List<NewsItem> results)
+            public IEnumerable<NewsItem> articles { get; set; }
+            public Result(IEnumerable<NewsItem> results)
             {
-                articles = results.ToArray();
+                articles = results;
             }
         }
 
@@ -50,7 +50,7 @@ namespace NewsResponder.Controllers
         public async Task<Result> Get()
         {
             var result = await Task.Run(() => 
-            context.News.Where(g => g.PartitionKey == DateTime.Now.ToString("MMddyyyy")).ToList());
+            context.News.Where(g => g.PartitionKey == DateTime.Now.ToString("MMddyyyy")));
             return new Result(result);
         }
 
@@ -58,7 +58,7 @@ namespace NewsResponder.Controllers
         public async Task<Result> Get(string id)
         {
             var result = await Task.Run(() => 
-            context.News.Where(g => g.PartitionKey == id).ToList());
+            context.News.Where(g => g.PartitionKey == id));
             return new Result(result);
         }
 
@@ -70,7 +70,7 @@ namespace NewsResponder.Controllers
             try
             {
                 string json = NewsItems.ToString();
-                List<NewsItem> news = NewsParser.ParseToList(json);
+                IEnumerable<NewsItem> news = NewsParser.ParseToList(json);
                 foreach (var item in news)
                 {
                     await Task.Run(() => {

@@ -96,7 +96,7 @@ namespace NewsUpdater
                     JsonString = await response.Content.ReadAsStringAsync();
                     JsonString = JsonString.Replace("\\u0026quot;", "");
                     JsonString = JsonString.Replace("\\u0026nbsp;", "");
-                    List<NewsItem> temp = NewsParser.ParseToList(JsonString);
+                    IEnumerable<NewsItem> temp = NewsParser.ParseToList(JsonString);
                     Db.AddNews(temp);
                 }
             }
