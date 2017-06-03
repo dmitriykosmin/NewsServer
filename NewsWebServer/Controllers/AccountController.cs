@@ -28,6 +28,7 @@ namespace NewsWebServer.Controllers
 
         public AccountController()
         {
+            
         }
 
         public AccountController(ApplicationUserManager userManager,

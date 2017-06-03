@@ -20,7 +20,7 @@ namespace NewsDBLibrary
         }
         public static string ParseToString(IEnumerable<NewsItem> news)
         {
-            return JsonConvert.SerializeObject(news);
+            return JsonConvert.SerializeObject(new Data { articles = news });
         }
     }
 }

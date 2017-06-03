@@ -88,12 +88,15 @@
     <Compile Include="NewsDBInterface.cs" />
     <Compile Include="NewsDB_AzureDataContext.cs" />
     <Compile Include="NewsDB_AzureDataSource.cs" />
+    <Compile Include="NewsDB_MSSQLDataContext.cs" />
+    <Compile Include="NewsDB_MSSQLDataSource.cs" />
     <Compile Include="NewsItem.cs" />
     <Compile Include="NewsParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

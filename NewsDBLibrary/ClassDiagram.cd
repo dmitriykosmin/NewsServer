@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="NewsDBLibrary.NewsDB_AzureDataContext">
+    <Position X="0.5" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewsDB_AzureDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsDBLibrary.NewsDB_AzureDataSource" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAiAAAAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>NewsDB_AzureDataSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NewsDBLibrary.NewsDB_MSSQLDataContext">
+    <Position X="4.5" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewsDB_MSSQLDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsDBLibrary.NewsDB_MSSQLDataSource" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAiAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>NewsDB_MSSQLDataSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NewsDBLibrary.NewsItem">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAAAAAAIAAAAIAAAAEIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NewsItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NewsDBLibrary.NewsParser">
+    <Position X="5.75" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="NewsDBLibrary.NewsParser.Data">
+        <TypeIdentifier>
+          <NewMemberFileName>NewsParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>NewsParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NewsDBLibrary.NewsDBInterface">
+    <Position X="2.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAiAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>NewsDBInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="10" />
+</ClassDiagram>
